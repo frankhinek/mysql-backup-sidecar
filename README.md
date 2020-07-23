@@ -11,6 +11,12 @@ This backup docker container creates incremental and compressed MySQL or MariaDB
 - backup rotation (e.g. delete incremental backups after a full backup)
 - supports docker credentials and environment based password definitions
 
+## Build Mariadb 10.5 Container
+
+Run the following command from the root of this repository:
+
+      docker build -t mariadb-backup-sidecar:10.5 -f mariadb/10.5/Dockerfile .
+
 ## Configuration
 
 The following environment variables are supported (incl. example values):
